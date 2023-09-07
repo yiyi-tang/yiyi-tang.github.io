@@ -11,8 +11,32 @@
   backdrop-filter: brightness(0.5);
   background-size: cover;
 
+  .icons {
+    ul {
+      list-style-type: none;
+      list-style: none;
+      margin: 0;
+
+      li {
+        display: inline;
+      }
+
+      a {
+        color: var(--link);
+      }
+
+      a:hover {
+        .fa-circle {
+          filter: brightness(0.85);
+        }
+      }
+    }
+  }
+
   h1 {
     font-family: $font-family-logo;
+    margin-top: 1%;
+    margin-bottom: 3%;
     @extend .subtle-txt-shadow;
   }
 

@@ -4,27 +4,55 @@ layout: default
 
 <div class="home">
     <style scoped>
-        {% assign image = site.header_feature_image | relative_url | split: '.' %}
+        {% assign image=site.header_feature_image | relative_url | split: '.' %}
+
+        .home-intro {
+            padding: 0.9% 20% 1.5% 20%;
+        }
+
         .call-out_img {
             background-image: url('{{ image | join: '.' }}');
         }
+
         {% if site.header_feature_image_responsive %}
+
         @media screen and (max-width: 768px) {
             .call-out_img {
-                background-image: url('{{ image[0] | append: '-medium.' | append: image[1] | default: image}}');
+                background-image: url('{{ image[0] | append: '-medium.' | append: image[1] | default: image }}');
             }
         }
+
         @media screen and (max-width: 576px) {
             .call-out_img {
                 background-image: url('{{ image[0] | append: '-small.' | append: image[1] }}');
             }
         }
+
         {% endif %}
     </style>
+
     <div id="main" class="call-out call-out_img">
-        <h1> {{ site.header_text | default: "Change <code>header_text</code> in <code>_config.yml</code>"}} </h1>
+        <h1>
+            {{ site.header_text | default: "Yiyi Tang" }}
+        </h1>
+        <div class="icons">
+            <ul>
+                {% include social/icons.liquid %}
+            </ul>
+        </div>
     </div>
 
-    {% include blog/blog.liquid %}
+    <section id="main" class="home-intro">
 
+        <p></p>
+
+        <p>Hi there, I'm Yiyi. Welcome to my personal website.</p>
+
+        <p>I'm currently a senior at the University of Hong Kong, majoring in Decision Analytics and minoring in
+            Linguistics.</p>
+
+        <p>Feel free to explore my site to learn more about my work and projects. If you're interested in what I do or
+            have any questions, don't hesitate to get in touch with me!</p>
+
+    </section>
 </div>

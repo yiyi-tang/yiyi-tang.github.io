@@ -32,12 +32,12 @@
 }
 
 %padding-header {
-  padding: $padding-medium $padding-large;
+  padding: $padding-small $padding-medium;
   @media (min-width: $xl-break) {
-    padding: $padding-large $padding-large;
+    padding: $padding-medium $padding-medium;
   }
   @media (max-width: $sm-break) {
-    padding: $padding-large;
+    padding: $padding-medium $padding-medium;
   }
 }
 
