@@ -13,7 +13,7 @@ header_text: Yiyi Tang
 header_feature_image: assets/img/header/triangular.jpeg
 header_feature_image_responsive: true
 footer_text: >
-  Powered by <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://github.com/sylhare/Type-on-Strap">Type on Strap</a>
+  © 2023 Yiyi Tang • <a href="https://yiyi-tang.github.io/credits/">Credits</a>
 
 # Blog
 excerpt: false                                           # Or "truncate" (first 250 characters), "false" to disable
